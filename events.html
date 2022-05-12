@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <div w3-include-html="./content-panels/header_content.html"></div>
+
+    <!-- Custom styles for this page -->
+    <link href="./css/event_cards.css" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+    <!-- The Navbar -->
+    <div w3-include-html="./content-panels/navbar.html"></div>
+
+    <div class="maincontent">
+      <!-- CONTENT -->
+      <div class="row events_page" >
+      
+	<!-- FACEBOOK -->
+	<div class="col-md-4">
+	  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2FBetjemanMillenniumPark%2F&tabs=timeline&width=500&height=500&small_header=false&hide_cover=false&show_facepile=true&appId" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+	</div>
+	<!-- EVENT LIST -->
+	<div class="col-md-8 mediabar id-events_list">
+	  <h3 class="title">Upcoming events</h3>
+	  <p> For more info about upcoming events please also see our <a href="https://en-gb.facebook.com/BetjemanMillenniumPark/">Facebook page</a>.<p>
+	    <ul class="event-list" id="event-list">
+	      <p>Sorry there are no upcoming events</p>
+	    </ul>
+	</div>
+      </div>
+      <hr><!-- LINE UNDER THE EVENT LIST -->
+    </div>
+    
+    <!-- /.content -->
+
+    <!-- The Footer -->    
+    <div w3-include-html="./content-panels/footer.html"></div>
+
+  </body>
+
+  <!-- JS -->
+  <!-- Set up importing of HTML elements -->
+  <script src="js/include_html.js"></script>
+  <script>
+    includeHTML();
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.polyfill.io/v3/polyfill.min.js?version=3.52.1&features=Array.prototype.forEach,console,Date.prototype.toISOString,document,Intl,Map,Promise,Set"></script>
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.8.23/plugin/localizedFormat.js"></script>
+  <script>dayjs.extend(window.dayjs_plugin_localizedFormat)</script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="js/calendar.js"></script>
+  <script>
+    $(document).ready(function() {
+	$('.nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+    });
+  </script>
+  
+</html>
+
+    
