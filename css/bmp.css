@@ -2,7 +2,7 @@
 :root {
     --bmp-extradarkpurple: #34014a;
     --bmp-darkgrey: #858585;
-    --bmp-lightgreen: #c2e166;
+    --bmp-lightgreen: #E5FF98;
     --bmp-midgreen: #85a366;
     --bmp-yellow: #ffe166;
     --bmp-lightpurple: #c6bde6;
@@ -46,7 +46,7 @@ body {
     font-weight: 300;
     font-style: normal;
     color: #8f68a2;
-    background-color: #c2e166;
+    background-color: #E5FF98;
 }
 
 .bd-placeholder-img {
@@ -138,5 +138,5 @@ a.self_page {
 }
 
 .bmp-bg-light {
-  background-color: #c2e166;
+  background-color: #E5FF98;
 }
